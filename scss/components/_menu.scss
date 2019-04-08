@@ -1,0 +1,121 @@
+@import "layout/var";
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 300;
+    opacity: 0;
+    min-height: auto!important;
+    transition: opacity 0.2s;
+    clip: auto;
+    @media (max-width: 1199px){
+        display: none;
+    }
+    &.visible{
+        opacity: 1;
+        display: block;
+        @media (max-width: 1199px){
+            display: none;
+        }
+    }
+    &.white-style{
+        .menu__wrapp{
+            border-bottom: 1px solid rgba(34, 2, 0, 0.3);
+        }
+        .menu__wrapp__left__list{
+            li{
+                span{
+                    color: #202020;
+                }
+            }
+        }
+        .menu__wrapp__right{
+            a{
+                color: rgba(34, 2, 0, 0.4);
+                &.active{
+                    color: rgba(34, 2, 0, 0.95);
+                }
+                &:after{
+                    background: rgba(34, 2, 0, 0.3);
+                }
+            }
+        }
+    }
+    &__wrapp{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 0 16px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        transition: 0.3s;
+        @media (max-width: 1919px){
+            padding: 16px 0;
+        }
+        &__left{
+            display: flex;
+            align-items: center;
+            &__logo{
+                flex-shrink: 0;
+                padding-right: 20px;
+            }
+            &__list{
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    padding: 0 20px;
+                    span{
+                        display: block;
+                        line-height: 16px;
+                        font-size: 13px;
+                        color: #FFFFFF;
+                        opacity: 0.4;
+                        cursor: pointer;
+                        transition: 0.3s;
+                        &.active{
+                            opacity: 0.85;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        &__right{
+            display: flex;
+            align-items: center;
+            a{
+                display: block;
+                padding: 0 10px;
+                position: relative;
+                line-height: 16px;
+                font-size: 13px;
+                color: rgba(255, 255, 255, 0.4);
+                transition: 0.3s;
+                &.active{
+                    color: rgba(255, 255, 255, 0.95);
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 3px;
+                    right: -0.5px;
+                    width: 1px;
+                    height: 12px;
+                    background: rgba(255, 255, 255, 0.3);
+                }
+                &:last-child{
+                    padding-right: 0;
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+}

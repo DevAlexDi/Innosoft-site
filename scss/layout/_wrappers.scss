@@ -1,0 +1,153 @@
+@import "layout/var";
+
+html,body{
+    font-family: $font;
+    font-weight: $r;
+    background: #202020;
+    overscroll-behavior: none;
+    
+
+}
+body{
+    &.modal-open{
+        @media (max-width: 767px){
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+        @media not all and (hover:hover) {
+            height: var(--app-height);
+        }
+    }
+}
+p{
+    margin: 0;
+}
+.app{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    @media (max-width: 1199px){
+        height: auto;
+        overflow: inherit;
+    }
+}
+.always-hidden{ 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    clip-path: incet(50%); 
+    height: 1px;
+    min-height: 0;
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px; 
+    white-space: nowrap;
+    @media (max-width: 1199px){
+        overflow: auto;
+        height: auto;
+        min-height: auto;
+        margin: auto;
+        width: 100%;
+        white-space: normal;
+    }
+    &.visible{
+        overflow: auto;
+        height: auto;
+        min-height: 100vh;
+        margin: auto;
+        width: 100%;
+        white-space: normal;
+        @media (max-width: 1199px){
+            overflow: auto;
+            height: auto;
+            min-height: auto;
+            margin: auto;
+            width: 100%;
+            white-space: normal;
+        }
+    }
+    &.visible-proj{
+        overflow: auto;
+        height: auto;
+        min-height: auto;
+        margin: 0;
+        width: 100%;
+        white-space: normal;
+        @media (max-width: 1199px){
+            overflow: auto;
+            height: auto;
+            min-height: auto;
+            margin: auto;
+            width: 100%;
+            white-space: normal;
+        }
+    } 
+}
+.main-container{
+    position: relative;
+    z-index: 5;
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 156px 64px 32px 64px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1919px){
+        padding: 100px 64px 32px 64px;
+        max-width: 1344px;
+    }
+    @media (max-width: 1599px){
+        padding: 64px 64px 32px 64px;
+        max-width: 1238px;
+    }
+    @media (max-width: 1365px){
+        padding: 160px 64px 32px 64px;
+        max-width: 1152px;
+    }
+    @media (max-width: 1199px){
+        padding: 96px 64px 32px 64px;
+        max-width: 100%;
+    }
+    @media (max-width: 767px){
+        padding: 96px 16px 0 16px;
+    }
+    &--menu{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &--title-projects{
+        padding: 0 64px;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        pointer-events: none;
+    }
+    &--about{
+        padding: 0 64px;
+        display: block;
+        width: 100%;
+        @media (max-width: 1199px){
+            padding: 0;
+        }
+        @media (max-width: 767px){
+            padding: 0 16px;
+        }
+        &__none-padd-xs{
+            @media (max-width: 767px){
+                padding: 0;
+            }
+        }
+    }
+    &--news{
+        padding: 0 64px;
+        display: block;
+        width: 100%;
+        position: static;
+        @media (max-width: 767px){
+            padding: 0 16px;
+        }
+    }
+}
