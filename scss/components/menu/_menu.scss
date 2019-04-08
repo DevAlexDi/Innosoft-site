@@ -1,0 +1,32 @@
+@import "layout/var";
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 300;
+
+    @media (max-width: 1199px){
+        display: none;
+    }
+
+    &__wrapp{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 0 16px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        transition: 0.3s;
+
+        @media (max-width: 1919px){
+            padding: 16px 0;
+        }
+    }
+
+    &--white-theme {
+        .menu__wrapp{
+            border-bottom: 1px solid rgba(34, 2, 0, 0.3);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "layout/var";
+
+.scroller{
+    height: 32px;
+    width: 32px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+    &__line{
+        width: 1px;
+        margin: 0 auto;
+        height: 64px;
+        background: rgba(255, 255, 255, 0.8);
+        animation: line-move 2s ease-out infinite;
+    }
+}

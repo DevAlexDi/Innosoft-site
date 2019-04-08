@@ -1,0 +1,60 @@
+@import "layout/var";
+
+.sl1-descr{
+    display: flex;
+    position: relative;
+
+    @media (max-width: 1199px){
+        display: block;
+    }
+
+    &__item{
+        width: 100%;
+        max-width: 300px;
+        margin-right: auto;
+
+        @media (max-width: 1199px){
+            max-width: 100%;
+            margin-bottom: 43px;
+        }
+    }
+
+    &__title{
+        font-weight: $m;
+        color: #fff;
+        line-height: 27px;
+        font-size: 20px;
+        margin-bottom: 30px;
+
+        @media (max-width: 1199px){
+            line-height: 31px;
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 767px){
+            line-height: 24px;
+            font-size: 17px;
+        }
+    }
+    p{
+        line-height: 16px;
+        font-size: 13px;
+        color: #fff;
+        max-width: 230px;
+        opacity: 0;
+        
+        @media (max-width: 1199px){
+            opacity: 1;
+            line-height: 34px;
+            font-size: 20px;
+            max-width: 100%;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        @media (max-width: 767px){
+            line-height: 24px;
+            font-size: 14px;
+        }
+    }
+}

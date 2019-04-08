@@ -1,0 +1,42 @@
+@import "layout/var";
+
+.menu-left-side{
+    display: flex;
+    align-items: center;
+
+    &__logo{
+        flex-shrink: 0;
+        padding-right: 20px;
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list-item{
+        padding: 0 20px;
+    }
+
+    &__link{
+        display: block;
+        line-height: 16px;
+        font-size: 13px;
+        color: #FFFFFF;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &--active{
+            opacity: 0.85;   
+        }
+    }
+
+    &--white-theme {
+        .menu-left-side__link {
+            color: #202020;
+        }
+    }
+}

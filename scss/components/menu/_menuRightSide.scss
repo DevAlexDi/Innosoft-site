@@ -1,0 +1,53 @@
+@import "layout/var";
+
+.menu-right-side{
+    display: flex;
+    align-items: center;
+
+    &__link{
+        display: block;
+        padding: 0 10px;
+        position: relative;
+        line-height: 16px;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.4);
+        transition: 0.3s;
+        
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 3px;
+            right: -0.5px;
+            width: 1px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        &:last-child{
+            padding-right: 0;
+
+            &:after{
+                display: none;
+            }
+        }
+
+        &--active{
+            color: rgba(255, 255, 255, 0.95);
+        }
+    }
+
+    &--white-theme {
+        .menu-right-side__link{
+            color: rgba(34, 2, 0, 0.4);
+
+            &:after{
+                background: rgba(34, 2, 0, 0.3);
+            }
+
+            &--active{
+                color: rgba(34, 2, 0, 0.95);
+            }
+        }
+    }
+}

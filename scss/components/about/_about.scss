@@ -1,0 +1,12 @@
+@import "layout/var";
+
+.about-sl{
+    @media (max-width: 1199px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__slide{
+        position: relative;
+    }
+}
