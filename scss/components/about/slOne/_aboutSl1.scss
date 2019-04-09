@@ -1,6 +1,8 @@
 @import "layout/var";
 
 .about-sl-1{
+    padding-bottom: 92px;
+
     @media (max-width: 1199px){
         order: 1;
         padding-bottom: 110px;
@@ -14,7 +16,7 @@
         padding-top: 250px;
 
         @media (max-width: 1919px){
-            padding-top: 200px;
+            padding-top: 222px;
         }
 
         @media (max-width: 1599px){

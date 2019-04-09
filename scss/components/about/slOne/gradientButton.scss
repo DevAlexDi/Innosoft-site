@@ -1,0 +1,12 @@
+@import "layout/var";
+
+.gradient-button{
+    border: none;
+    padding: 14px 25px;
+    font-weight: $b;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(116.73deg, #DC6D3E -23.15%, #ED9E40 -23.14%, #CC1276 114.31%);
+    border-radius: 2px;
+}

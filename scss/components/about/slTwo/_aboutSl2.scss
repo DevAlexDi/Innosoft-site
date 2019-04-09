@@ -1,0 +1,50 @@
+@import "layout/var";
+
+.about-sl-2{
+    background: #fff;
+    &__wrapp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 105px;
+        @media (max-width: 1919px){
+            padding-top: 89px;
+        }
+        @media (max-width: 1199px){
+            padding-top: 0;
+        }
+    }
+    &__title{
+        position: relative;
+        overflow: hidden;
+        font-size: 98px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-weight: $b;
+        margin-bottom: 43px;
+        color: #202020;
+        @media (max-width: 1919px){
+            margin-bottom: 23px;
+        }
+        @media (max-width: 1599px){
+            margin-bottom: 10px;
+            font-size: 70px;
+        }
+        @media (max-width: 1199px){
+            line-height: 36px;
+            font-size: 25px;
+            letter-spacing: 0.03em;
+            margin-bottom: 70px;
+            margin-top: 84px;
+            font-weight: $r;
+            padding: 0 64px;
+        }
+
+        @media (max-width: 767px){
+            padding: 0 16px;
+            margin: 82px 0 18px 0;
+            line-height: 20px;
+            font-size: 14px;
+        }
+    }
+}

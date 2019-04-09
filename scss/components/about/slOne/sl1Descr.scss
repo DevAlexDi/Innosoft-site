@@ -3,12 +3,14 @@
 .sl1-descr{
     display: flex;
     position: relative;
+    align-items: baseline;
+    margin-bottom: 83px;
 
     @media (max-width: 1199px){
         display: block;
     }
 
-    &__item{
+    &__item {
         width: 100%;
         max-width: 300px;
         margin-right: auto;
@@ -19,12 +21,13 @@
         }
     }
 
-    &__title{
+    &__title {
         font-weight: $m;
         color: #fff;
         line-height: 27px;
         font-size: 20px;
         margin-bottom: 30px;
+        margin-top: 30px;
 
         @media (max-width: 1199px){
             line-height: 31px;
@@ -37,15 +40,13 @@
             font-size: 17px;
         }
     }
-    p{
+    &__descr {
         line-height: 16px;
         font-size: 13px;
         color: #fff;
         max-width: 230px;
-        opacity: 0;
         
         @media (max-width: 1199px){
-            opacity: 1;
             line-height: 34px;
             font-size: 20px;
             max-width: 100%;
