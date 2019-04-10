@@ -1,19 +1,18 @@
 
 @import "layout/var";
 @import "layout/wrappers";
-
+//анимации
 @import "base/animations";
-
+//меню
 @import "components/menu/menu";
 @import "components/menu/menuLeftSide";
 @import "components/menu/menuRightSide";
-
+//стартовый экран
 @import "components/start/start";
-
+//линия
 @import "components/scroller/scroller";
-
+//раздел about главной страницы
 @import "components/about/about";
-
 @import "components/about/aboutSl1";
 @import "components/about/xsTitle";
 @import "components/about/sl1Descr";
@@ -24,3 +23,11 @@
 @import "components/about/aboutSl4";
 @import "components/about/gradientText";
 @import "components/about/sl4text";
+@import "components/about/aboutSl5";
+@import "components/about/sl5List";
+@import "components/about/aboutSl6";
+@import "components/about/flexHiring";
+@import "components/about/formWrapper";
+//подвал
+@import "components/footer/footer";
+@import "components/footer/socialsFooter";

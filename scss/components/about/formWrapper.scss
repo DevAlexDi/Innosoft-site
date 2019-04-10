@@ -1,0 +1,172 @@
+@import "layout/var";
+
+.form-wrapper{
+    &__title{
+        line-height: 32px;
+        font-size: 25px;
+        letter-spacing: 0.02em;
+        padding-left: 16px;
+        margin-top: 0;
+        color: #202020;
+        font-weight: $b;
+        margin-bottom: 50px;
+        
+        @media (max-width: 1919px){
+            padding-left: 0;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 1599px){
+            margin-bottom: 30px;
+        }
+        @media (max-width: 1300px){
+            margin-bottom: 40px;
+        }
+        @media (max-width: 1199px){
+            margin-bottom: 10px;
+            br{
+                display: none;
+            }
+        }
+        @media (max-width: 767px){
+            line-height: 24px;
+            font-size: 17px;
+            br{
+                display: block;
+            }
+        }
+    }
+    &__form{
+        
+        input,textarea{
+            display: block;
+            width: 100%;
+            outline: none;
+            border: none;
+            background: #fff;
+            line-height: 16px;
+            font-size: 13px;
+            color: #202020;
+            border-bottom: 1px solid rgba(32, 32, 32, 0.8);
+            padding: 11px 0;
+            &::-webkit-input-placeholder {color:#202020;}
+            &::-moz-placeholder{color:#202020;}
+            &:-moz-placeholder{color:#202020;}
+            &:-ms-input-placeholder{color:#202020;}
+            @media (max-width: 1199px){
+                line-height: 39px;
+                font-size: 23px;
+                padding: 25px 0;
+            }
+            @media (max-width: 767px){
+                line-height: 24px;
+                font-size: 14px;
+                padding: 21px 0;
+                margin-bottom: 10px;
+            }
+        }
+        textarea{
+            height: 112px;
+            resize: none;
+            @media (max-width: 1199px){
+                height: 140px;
+            }
+            @media (max-width: 767px){
+                margin-bottom: 48px;
+                height: 130px;
+            }
+        }
+        button{
+            display: block;
+            width: 100%;
+            background: linear-gradient(110.34deg, #DC6D3E -23.15%, #ED9E40 -23.14%, #CC1276 114.31%);
+            padding: 12px 0;
+            font-size: 13px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: $b;
+            border: none;
+
+            @media (max-width: 1199px){
+                line-height: 29px;
+                font-size: 23px;
+                padding: 18px 0;
+                font-weight: $m;
+            }
+            @media (max-width: 767px){
+                line-height: 21px;
+                font-size: 17px;
+                padding: 24px 0;
+            }
+            
+        }
+    }
+    &__top{
+        display: flex;
+        margin-bottom: 20px;
+        @media (max-width: 767px){
+            display: block;
+        }
+        
+    }
+    &__side-top{
+        width: 50%;
+        @media (max-width: 767px){
+            width: 100%;
+        }
+        &:first-child{
+            padding-right: 8px;
+            @media (max-width: 1199px){
+                padding-right: 16px;
+            }
+            @media (max-width: 767px){
+                padding: 0;
+            }
+        }
+        &:last-child{
+            padding-left: 8px;
+            @media (max-width: 1199px){
+                padding-left: 16px;
+            }
+            @media (max-width: 767px){
+                padding: 0;
+            }
+        }
+    }
+    &__bott{
+        display: flex;
+        margin-bottom: 20px;
+        align-items: flex-end;
+        @media (max-width: 767px){
+            display: block;
+        }
+        
+    }
+    &__side-bott{
+            
+        &:first-child{
+            padding-right: 8px;
+            width: 100%;
+            @media (max-width: 1199px){
+                padding-right: 16px;
+            }
+            @media (max-width: 767px){
+                padding: 0;
+            }
+        }
+        &:last-child{
+            padding-left: 8px;
+            width: 130px;
+            flex-shrink: 0;
+            @media (max-width: 1199px){
+                padding-left: 16px;
+                width: 192px;
+            }
+            @media (max-width: 767px){
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+}
