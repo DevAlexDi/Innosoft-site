@@ -9,4 +9,8 @@
     text-transform: uppercase;
     background: linear-gradient(116.73deg, #DC6D3E -23.15%, #ED9E40 -23.14%, #CC1276 114.31%);
     border-radius: 2px;
+
+    @media (max-width: 767px){
+        font-size: 14px;
+    }
 }

@@ -4,8 +4,27 @@
     background: #fff;
     padding: 152px 0 200px 0;
 
+    @media (max-width: 1199px){
+        padding: 60px 64px;
+    }
+
+    @media (max-width: 767px){
+        display: none;
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
+
+        @media (max-width: 1199px){
+            display: block;  
+        }
+    }
+
+    &__text-wrapper {
+        @media (max-width: 1199px){
+            max-width: 732px;
+            margin: 0 auto;
+        }
     }
 }

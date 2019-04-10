@@ -17,6 +17,7 @@
             background-image: url(../img/team-sm.jpg);
             height: 576px;
             background-position: center;
+            padding: 0 64px;
         }
 
         @media (max-width: 767px){
@@ -30,5 +31,9 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         margin: 0;
+
+        @media (max-width: 1199px){
+            display: none;
+        }
     }
 }

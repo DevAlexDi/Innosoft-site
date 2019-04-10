@@ -6,10 +6,7 @@
     left: 0;
     width: 100%;
     z-index: 300;
-
-    @media (max-width: 1199px){
-        display: none;
-    }
+    transition: background-color 0.3s;
 
     &__wrapp{
         display: flex;
@@ -28,5 +25,9 @@
         .menu__wrapp{
             border-bottom: 1px solid rgba(34, 2, 0, 0.3);
         }
+    }
+
+    &--black-background {
+        background-color: #202020;
     }
 }
