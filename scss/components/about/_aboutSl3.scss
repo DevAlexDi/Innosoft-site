@@ -1,0 +1,34 @@
+@import "layout/var";
+
+.about-sl-3{
+    &__photo{
+        height: 530px;
+        background-position: center left;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        background-image: url(../img/team.jpg);
+
+        @media (max-width: 1919px){
+            height: 450px;
+        }
+        
+        @media (max-width: 1199px){
+            background-image: url(../img/team-sm.jpg);
+            height: 576px;
+            background-position: center;
+        }
+
+        @media (max-width: 767px){
+            height: 235px;
+        }
+    }
+
+    &__title {
+        font-weight: $b;
+        font-size: 98px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}

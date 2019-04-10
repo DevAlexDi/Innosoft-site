@@ -1,0 +1,21 @@
+@import "layout/var";
+
+.gradient-text{
+    margin: 0;
+    font-size: 100px;
+    line-height: 115px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: $b;
+    background: linear-gradient(116.73deg, #DC6D3E -23.15%, #ED9E40 -23.14%, #CC1276 114.31%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 74px;
+    &__item {
+        display: block;
+
+        &:last-child {
+            padding-left: 60px;
+        }
+    }
+}
