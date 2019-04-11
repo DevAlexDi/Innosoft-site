@@ -1,0 +1,66 @@
+@import "layout/var";
+
+.project {
+    display: flex;
+    align-items: center;
+    max-width: 1408px;
+    margin: 0 auto 105px auto;
+
+    @media (max-width: 1919px){
+        max-width: 1280px;
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .project__description {
+            padding-left: 70px;
+            padding-right: 90px;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__img {
+        width: 570px;
+        height: 672px;
+        flex-shrink: 0;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    &__name {
+        color: #fff;
+        font-size: 50px;
+        line-height: 57px;
+        letter-spacing: 0.04em;
+        font-weight: $b;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        padding-left: 70px;
+        padding-right: 90px;
+    }
+
+    &__title {
+        font-weight: $b;
+        font-size: 25px;
+        line-height: 32px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 32px;
+    }
+}

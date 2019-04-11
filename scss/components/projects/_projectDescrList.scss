@@ -1,0 +1,36 @@
+@import "layout/var";
+
+.project-descr-list {
+    display: flex;
+    margin: 0 0 43px 0;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        padding-top: 20px;
+        position: relative;
+        max-width: 150px;
+        margin-right: 47px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 1px;
+            background: #fff;
+        }
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

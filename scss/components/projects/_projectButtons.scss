@@ -1,0 +1,23 @@
+@import "layout/var";
+
+.project-buttons {
+    display: flex;
+    align-items: center;
+
+    &__gradient-button {
+        margin-right: 35px;
+        padding: 10px 15px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__link {
+        display: block;
+        background: linear-gradient(116.73deg, #DC6D3E -23.15%, #ED9E40 -23.14%, #CC1276 114.31%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 14px;
+        font-weight: $b;
+        text-transform: uppercase;
+    }
+}
