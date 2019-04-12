@@ -1,0 +1,82 @@
+@import "layout/var";
+
+.new-content{
+    &__counter{
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        span{
+            display: block;
+            font-size: 25px;
+            letter-spacing: 0.05em;
+            color: #202020;
+            margin-bottom: 19px;
+        }
+        &__item{
+            position: relative;
+            margin-right: 38px;
+
+            span{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                transform: translateY(30px);
+                opacity: 0;
+
+            }
+        }
+    }
+    &__title{
+        font-size: 25px;
+        font-weight: $b;
+        position: relative;
+        color: #202020;
+        margin-bottom: 47px;
+        min-height: 96px;
+        &__link{
+            color: #202020;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: translateY(30px);
+            opacity: 0;
+        }
+    }
+    &__text{
+        font-size: 13px;
+        position: relative;
+        min-height: 84px;
+        margin-bottom: 48px;
+        &__item{
+            color: #202020;
+            font-size: 13px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: translateY(30px);
+            opacity: 0;
+        }
+    }
+    &__link{
+        margin-bottom: 150px;
+        display: block;
+        position: relative;
+        &__item{
+            font-size: 13px;
+            text-decoration-line: underline;
+            color: #202020;
+            font-weight: $b;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: translateY(30px);
+            opacity: 0;
+        }
+    }
+}
