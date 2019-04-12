@@ -32,13 +32,13 @@
                                 <a href="#" class="menu-left-side__link menu-left-side__link--active">About</a>
                             </li>
                             <li class="menu-left-side__list-item">
-                                <a href="#"  class="menu-left-side__link ">Projects</a>
+                                <a href="/projects.html"  class="menu-left-side__link ">Projects</a>
                             </li>
                             <li class="menu-left-side__list-item">
-                                <a href="#" class="menu-left-side__link">News</a>
+                                <a href="/news.html" class="menu-left-side__link">News</a>
                             </li>
                             <li class="menu-left-side__list-item">
-                                <a href="#" class="menu-left-side__link">Contacts</a>
+                                <a href="/contacts.html" class="menu-left-side__link">Contacts</a>
                             </li>
                         </ul>
                     </div>
@@ -94,7 +94,7 @@
                                 <p class="sl1-descr__descr">Aspiration to experiments and development. Good command of proven technologies.</p>
                             </div>
                         </div>
-                        <button class="gradient-button">stay in touch</button>
+                        <button class="gradient-button open-modal-form">stay in touch</button>
                     </div>
                 </div>
             </div>
@@ -223,7 +223,7 @@
                         <p class="sl-5-list__text">process, communications, experience, expertise and dedication.</p>
                     </div>
                     <div class="sl-5-list__flex">
-                        <button class="gradient-button">stay in touch</button>
+                        <button class="gradient-button open-modal-form">stay in touch</button>
                     </div>
                 </div>
             </div>
@@ -307,6 +307,39 @@
             </div>
         </div>
     </div>
+
+    <!--модалка Is it interesting?-->
+    <div class="modal fade modal-form" id="modal-form" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-form__modal-dialog">
+            <button type="button" class="close-modal close-modal--form-close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="flex-contacts flex-contacts--in-modal">
+                <div class="flex-contacts__right flex-contacts__right--full-width">
+                    <h6 class="flex-contacts__title">
+                        Write us for additional information<br>and how we can help you
+                    </h6>
+                    <form>
+                        <div class="flex-contacts__form-top">
+                            <div class="flex-contacts__form-top__side">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="flex-contacts__form-top__side">
+                                <input type="email" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="flex-contacts__form-bott">
+                            <div class="flex-contacts__form-bott__side">
+                                <textarea placeholder="Your message"></textarea>
+                            </div>
+                            <div class="flex-contacts__form-bott__side">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ модалка Is it interesting?-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->

@@ -18,6 +18,26 @@
         padding-top: 100px;
     }
 
+    &--in-modal {
+        padding: 62px 60px 97px;
+
+        @media (max-width: 1199px){
+            padding: 62px 60px 97px;
+        }
+
+        @media (max-width: 761px){
+           padding: 15px;
+        }
+
+        .flex-contacts__form-bott {
+            margin-bottom: 0;
+
+            @media (max-width: 1199px){
+                padding-bottom: 0px;
+            }
+        }
+    }
+
     &__list{
         margin: 0;
         padding: 0;
@@ -114,6 +134,22 @@
 
         @media (max-width: 1199px){
             width: 100%;
+        }
+
+        &--full-width {
+            width: 100%;
+
+            @media (max-width: 1919px){
+                width: 100%;
+            }
+    
+            @media (max-width: 1599px){
+                width: 100%;
+            }
+    
+            @media (max-width: 1300px){
+                width: 100%;
+            }
         }
     }
 

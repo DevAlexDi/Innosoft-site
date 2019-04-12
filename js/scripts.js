@@ -27,6 +27,10 @@ $(document).ready(function(){
         $('#modal-its').modal('show');
     });
 
+    $('.open-modal-form').click(function(){
+        $('#modal-form').modal('show');
+    });
+    
     // sliders init / disabled
 
     var flagInitSlider = false;

@@ -1,11 +1,26 @@
 @import "layout/var";
 
 .modal-backdrop.in{
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 .modal-backdrop{
-    background: #fff;
+    background: #202020;
+}
+
+.modal-form{
+    &__modal-dialog {
+        background: #fff;
+        width: 797px;
+
+        @media (max-width: 991px){
+            width: 650px;
+        }
+
+        @media (max-width: 767px){
+            width: 100%;
+        }
+    }
 }
 
 .modal-project{
@@ -117,6 +132,21 @@
         background: #fff;
         transform-origin: center;
         transform: rotate(45deg);  
+    }
+
+    &--form-close {
+        top: 15px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+
+        &::before {
+            background: #000;
+        }
+
+        &::after {
+            background: #000;
+        }
     }
 }
 
