@@ -1,0 +1,21 @@
+@import "layout/var";
+
+.sm-contacts-title{
+    display: none;
+
+    @media (max-width: 1199px){
+        display: block;
+        line-height: 36px;
+        font-size: 25px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 53px;
+        color: #202020;
+    }
+
+    @media (max-width: 767px){
+        line-height: 20px;
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+}

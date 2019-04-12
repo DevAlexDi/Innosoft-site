@@ -1,0 +1,143 @@
+@import "layout/var";
+
+
+.contacts{
+    background-color: #202020;
+    position: relative;
+
+    @media (max-width: 1199px){
+        padding: 0 64px;
+        background: #fff;
+    }
+    @media (max-width: 767px){
+        padding: 0;
+    }
+
+    &__wrapp{
+        position: relative;
+    }
+
+    &__top{
+        height: 530px;
+        background: #202020;
+        position: relative;
+
+        @media (max-width: 1919px){
+            height: 430px;
+        }
+
+        @media (max-width: 1599px){
+            height: 325px;
+        }
+
+        @media (max-width: 1300px){
+            height: 530px;
+        }
+
+        @media (max-width: 1199px){
+            display: none;
+        }
+        
+        &--map-height {
+            height: 552px;
+
+            @media (max-width: 1919px){
+                height: 552px;
+            }
+
+            @media (max-width: 1599px){
+                height: 552px;
+            }
+
+            @media (max-width: 1300px){
+                height: 552px;
+            }
+        }
+    }
+
+    &__map{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-image: url(../img/amap.jpg);
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.25s;
+        
+    }
+
+    &__circle{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        transition: 0.3s;
+
+        &--circle-1{
+            transform: translate(-35px, -73px);
+            transition-delay: 0.25s;
+        }
+
+        &--circle-2{
+            transform: translate(-31px, -96px);
+            transition-delay: 0.35s;
+        }
+
+        &--circle-3{
+            transform: translate(22px, -104px);
+            transition-delay: 0.45s;
+        }
+
+        &--circle-4{
+            transform: translate(81px, -84px);
+            transition-delay: 0.55s;
+        }
+    }
+
+    &__title{
+        position: relative;
+        padding-top: 265px;
+        line-height: 112px;
+        font-size: 98px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-weight: $b;
+        color: #FFFFFF;
+        overflow: hidden;
+        margin: 0;
+
+        @media (max-width: 1919px){
+            padding-top: 227px;
+        }
+
+        @media (max-width: 1599px){
+            padding-top: 161px;
+        }
+
+        @media (max-width: 1300px){
+            padding-top: 265px;
+        }
+
+        &--title-offices {
+            padding-top: 40px;
+            font-size: 70px;
+            line-height: 80px;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    &__bott{
+        position: relative;
+        background: #fff;
+    }
+}
+
+.rel-contacts-wrapp{
+    position: relative;
+}
